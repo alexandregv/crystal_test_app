@@ -1,0 +1,13 @@
+name: crystal_test_app
+version: 0.1.0
+
+authors:
+  - triinoxys <contact@triinoxys.fr>
+
+targets:
+  crystal_test_app:
+    main: src/crystal_test_app.cr
+
+crystal: 0.25.1
+
+license: MIT
