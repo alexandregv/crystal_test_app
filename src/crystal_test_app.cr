@@ -7,7 +7,8 @@ module CrystalTestApp
              "Looper",
              "Web Server",
              "Fibonacci",
-             "Files Concatenator"] of String
+             "Files Concatenator",
+             "Lines Counter"] of String
 
   puts "Welcome to this Crystal test app!"
   puts "If you expect to see something useful here, you are not at the good place :-)\n\n"
