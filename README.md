@@ -1,3 +1,7 @@
+[![Crystal](https://img.shields.io/badge/lang-crystal-9400D3.svg?style=flat-square)](https://crystal-lang.org)
+[![Travis](https://img.shields.io/travis/triinoxys/crystal_test_app.svg?style=flat-square)](https://travis-ci.org/triinoxys/crystal_test_app)
+
+
 # crystal_test_app
 
 [crystal_test_app](https://github.com/triinoxys/crystal_test_app) is a simple, test-purpose app, written in ~~Ruby~~ Crystal
