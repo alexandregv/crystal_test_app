@@ -5,7 +5,8 @@ require "benchmark"
 module CrystalTestApp
   CHOICES = ["Hello World",
              "Looper",
-             "Web Server"] of String
+             "Web Server",
+             "Fibonacci"] of String
 
   puts "Welcome to this Crystal test app!"
   puts "If you expect to see something useful here, you are not at the good place :-)\n\n"
