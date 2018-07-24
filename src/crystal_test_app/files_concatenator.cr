@@ -12,11 +12,12 @@ module CrystalTestApp
         concat = ""
 
         files.each do |f|
-          concat += "\n\n---------------[ #{File.basename(f)} ]---------------\n\n"
+          # concat += "\n\n---------------[ #{File.basename(f)} ]---------------\n\n"
           concat += File.read(f)
         end
 
         puts concat
+        CrystalTestApp.start
       end
     end
   end

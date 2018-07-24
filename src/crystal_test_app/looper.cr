@@ -10,6 +10,7 @@ module CrystalTestApp
           puts "Please provide a valid number."
           self.initialize
         end
+        CrystalTestApp.start
       end
     end
   end

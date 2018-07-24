@@ -25,6 +25,7 @@ module CrystalTestApp
         end
 
         puts total_lines
+        CrystalTestApp.start
       end
     end
   end

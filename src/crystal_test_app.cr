@@ -10,13 +10,18 @@ module CrystalTestApp
              "Files Concatenator",
              "Lines Counter"] of String
 
-  puts "Welcome to this Crystal test app!"
+  at_exit { puts "\nGoodbye!" }
+
+  puts "Welcome to this Crystal Test App!"
   puts "If you expect to see something useful here, you are not at the good place :-)\n\n"
 
-  menu(true)
+  @@first_run = true
+  start
 
-  def self.menu(first_run = false)
-    puts "\n--------------------\n" unless first_run
+  def self.menu
+    puts "\n--------------------\n" unless @@first_run
+    @@first_run = false
+
     puts "Please, choose the module you want to launch:"
 
     CHOICES.each_with_index do |choice, index|
@@ -31,11 +36,14 @@ module CrystalTestApp
         CrystalTestApp::Modules::{{choice.strip.tr(" ", "").id}}.new
       {% end %}
       when "0"
-        puts "Goodbye!"
-        exit 0
+        exit
       else
         menu
     end
     {% end %}
+  end
+
+  def self.start
+    menu
   end
 end

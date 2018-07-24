@@ -10,9 +10,16 @@ module CrystalTestApp
         end
 
         address = server.bind_tcp 8080
-        puts "Listening on http://#{address} … Open your webbrowser at this address!"
-        puts "Press Ctrl + C to stop."
-        server.listen
+
+        spawn do
+          puts "Listening on http://#{address} … Open your webbrowser at this address!"
+          puts "Press [Enter] to stop."
+          server.listen
+        end
+
+        Fiber.yield
+        gets
+        CrystalTestApp.start
       end
     end
   end

@@ -10,6 +10,7 @@ module CrystalTestApp
           puts "Please provide a valid integer."
           self.initialize
         end
+        CrystalTestApp.start
       end
 
       def fibonacci(n)

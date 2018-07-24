@@ -1,7 +1,7 @@
-# This will run `shards install` to install dependencies and then `crystal spec` to test the project
+# It will run `shards install` to install dependencies
 language: crystal
 
-
-# This will check if the code is well formated
+# It will run specs (tests) and check the code formatting
 script:
+  - crystal spec
   - crystal tool format --check
