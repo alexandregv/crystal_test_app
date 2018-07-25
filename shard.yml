@@ -1,6 +1,8 @@
 name: crystal_test_app
 version: 0.1.0
 
+description: A simple and test-purpose app.
+
 authors:
   - triinoxys <contact@triinoxys.fr>
 
