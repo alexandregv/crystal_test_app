@@ -1,7 +1,8 @@
 # It will run `shards install` to install dependencies
 language: crystal
 
-# It will run specs (tests) and check the code formatting
+# It will install Cake which will check code formatting,
+# run specs, generate docs and build the release binary
 script:
-  - crystal spec
-  - crystal tool format --check
+  - curl https://raw.githubusercontent.com/axvm/cake/master/install.sh | bash; source $HOME/.bashrc
+  - cake travis
