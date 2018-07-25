@@ -6,3 +6,13 @@ language: crystal
 script:
   - curl https://raw.githubusercontent.com/axvm/cake/master/install.sh | bash; source $HOME/.bashrc
   - cake travis
+
+# Automatically deploy docs at https://triinoxys.github.io/crtmp1/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  project_name: crystal_test_app
+  on:
+    branch: master
+  local_dir: docs

@@ -1,4 +1,5 @@
 [![Crystal](https://img.shields.io/badge/lang-crystal-9400D3.svg?style=flat-square)](https://crystal-lang.org)
+[![Docs](https://img.shields.io/badge/docs-latest-green.svg?style=flat-square)](https://triinoxys.github.io/crystal_test_app)
 [![Travis](https://img.shields.io/travis/triinoxys/crystal_test_app.svg?style=flat-square)](https://travis-ci.org/triinoxys/crystal_test_app)
 
 
