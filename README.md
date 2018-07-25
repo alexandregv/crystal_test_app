@@ -8,13 +8,21 @@
 
 ## Installation
 
+With [Cake](https://github.com/axvm/cake) (recommended):
 1. Clone this repo (`git clone https://github.com/triinoxys/crystal_test_app`)
 2. Go to the directory (`cd crystal_test_app`)
-3. Build the binary (`crystal build src/crystal_test_app.cr`)
+3. Run Cake (`cake`)
+
+Without (classic):
+1. Clone this repo (`git clone https://github.com/triinoxys/crystal_test_app`)
+2. Go to the directory (`cd crystal_test_app`)
+3. Run tests (`crystal spec`)
+4. Build the binary (`shards build --production --release`)
+5. More: Build the docs (`crystal docs`)
 
 ## Usage
 
-Just run `./crystal_test_app` (yeah, crystal is compiled in native binary!).
+Just run `./bin/crystal_test_app`.
 
 ## Contributing
 
